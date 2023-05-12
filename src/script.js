@@ -1,6 +1,6 @@
 function displayWeather(response) {
   document.querySelector("#city-name").innerHTML = response.data.city;
-  document.querySelector("#placeholder").innerHTML = Math.round(
+  document.querySelector("#live-temp").innerHTML = Math.round(
     response.data.temperature.current
   );
   document.querySelector("#humidity").innerHTML =
@@ -8,8 +8,15 @@ function displayWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#description").innerHTML =
-    response.data.condition.icon;
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+    );
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", response.data.condition.description);
 }
 
 function searchCity(city) {
