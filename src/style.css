@@ -30,14 +30,19 @@ body {
   color: #d1e4ea;
 }
 .degree1 {
-  font-size: 20px;
+  font-size: 22px;
 }
-.celcius {
-  font-size: 12px;
+.celsius a {
+  font-size: 14px;
   position: relative;
   top: -5px;
   left: -4px;
+  color: #eeda91;
+  text-decoration: none;
+}
+.celsius a:hover {
   color: #d5d5d5;
+  text-decoration: underline;
 }
 .separater {
   font-size: 10x;
@@ -46,14 +51,19 @@ body {
   right: 1px;
 }
 .degree2 {
-  font-size: 20px;
+  font-size: 22px;
 }
-.fahrenheit {
-  font-size: 12px;
+.fahrenheit a {
+  font-size: 14px;
   position: relative;
   top: -5px;
   left: -4px;
+  color: #fbd1e9;
+  text-decoration: none;
+}
+.fahrenheit a:hover {
   color: #d5d5d5;
+  text-decoration: underline;
 }
 .stats {
   font-family: "Roboto", sans-serif;
