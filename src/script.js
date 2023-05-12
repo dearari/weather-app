@@ -1,8 +1,8 @@
 function displayWeather(response) {
+  celsiusTemperature = response.data.temperature.current;
   document.querySelector("#city-name").innerHTML = response.data.city;
-  document.querySelector("#live-temp").innerHTML = Math.round(
-    response.data.temperature.current
-  );
+  document.querySelector("#live-temp").innerHTML =
+    Math.round(celsiusTemperature);
   document.querySelector("#humidity").innerHTML =
     response.data.temperature.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -79,5 +79,28 @@ if (minute < 10) {
 
 let date = document.querySelector("#current-date");
 date.innerHTML = `${day} | ${month} ${date2} | ${hours12(hour)}:${minute}`;
+
+searchCity("Seoul");
+
+function convertFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheit = (celsiusTemperature * 9) / 5 + 32;
+  let temperature = document.querySelector("#live-temp");
+  temperature.innerHTML = Math.round(fahrenheit);
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", convertFahrenheit);
+
+function convertCelsius(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#live-temp");
+  temperature.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", convertCelsius);
 
 searchCity("Seoul");
