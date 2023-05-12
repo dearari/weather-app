@@ -84,84 +84,6 @@ h2 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
 }
-.wave-top {
-  background-image: url("../img/wave-top.png");
-  background-repeat: no-repeat;
-}
-.upcoming-forecast {
-  background-color: #e8e2fa;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-.day1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #868686;
-  text-align: left;
-  text-transform: uppercase;
-  background: #fff;
-  max-width: 150px;
-  margin-left: 35px;
-  padding: 5px 0px 5px 10px;
-}
-.day-end {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #fbd1e9;
-  text-transform: uppercase;
-  background: #fff;
-  padding: 5px 10px 5px 0px;
-}
-.day2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #868686;
-  text-align: left;
-  text-transform: uppercase;
-  background: #fff;
-  max-width: 150px;
-  margin-left: 35px;
-  padding: 5px 0px 5px 10px;
-}
-.deets1 {
-  background: #fff;
-  text-align: center;
-  max-width: 150px;
-  margin-right: 5px;
-  border-radius: 4px;
-}
-.deets2 {
-  background: #fff;
-  text-align: center;
-  max-width: 150px;
-  margin-right: 45px;
-  border-radius: 4px;
-}
-.temp-forecast {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: #868686;
-}
-.temp-degree {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: #c6c6c6;
-}
-.describe {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  color: #eeda91;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.wave-bottom {
-  background-image: url("../img/wave-bottom.png");
-  background-repeat: no-repeat;
-  padding-bottom: 6px;
-}
 .search {
   background-color: #fff;
   padding: 20px;
@@ -191,22 +113,6 @@ h2 {
   background: #fff;
   border: 1px solid #fbd1e9;
   color: #fbd1e9;
-}
-.current {
-  background: #d1e4ea;
-  padding: 5px 10px 5px 10px;
-  border: 1px solid #d1e4ea;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #fff;
-}
-.current:hover {
-  background: #fff;
-  border: 1px solid #d1e4ea;
-  color: #d1e4ea;
 }
 .bottom {
   background: #fff;
