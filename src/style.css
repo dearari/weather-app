@@ -37,11 +37,10 @@ body {
   position: relative;
   top: -5px;
   left: -4px;
-  color: #eeda91;
+  color: #d5d5d5;
   text-decoration: none;
 }
 .celsius a:hover {
-  color: #d5d5d5;
   text-decoration: underline;
 }
 .separater {
@@ -58,11 +57,10 @@ body {
   position: relative;
   top: -5px;
   left: -4px;
-  color: #fbd1e9;
+  color: #d5d5d5;
   text-decoration: none;
 }
 .fahrenheit a:hover {
-  color: #d5d5d5;
   text-decoration: underline;
 }
 .stats {
