@@ -8,21 +8,52 @@ body {
   background-image: url("../img/container.png");
   background-repeat: no-repeat;
 }
-.current-temp {
+.icon {
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 50px;
 }
-.livetemp {
+.current-temp {
+  position: relative;
+  top: -15px;
+  text-align: center;
+}
+.live-temp {
   font-family: "Roboto", sans-serif;
   font-size: 100px;
   color: #d8d1f1;
 }
-.degrees {
+.convert {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
   position: relative;
-  font-size: 60px;
-  top: -32px;
-  color: #dfeaf0;
+  top: -25px;
+  color: #d1e4ea;
+}
+.degree1 {
+  font-size: 20px;
+}
+.celcius {
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+  left: -4px;
+  color: #d5d5d5;
+}
+.separater {
+  font-size: 10x;
+  position: relative;
+  top: -4px;
+  right: 1px;
+}
+.degree2 {
+  font-size: 20px;
+}
+.fahrenheit {
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+  left: -4px;
+  color: #d5d5d5;
 }
 .stats {
   font-family: "Roboto", sans-serif;
@@ -32,22 +63,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.celcius {
-  color: #d5cded;
-  font-size: 12px;
-}
-.separater {
-  padding: 2px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 12px;
-}
-.fahrenheit {
-  color: #d5cded;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 12px;
-}
+
 h1 {
   text-align: center;
   text-transform: uppercase;
