@@ -19,7 +19,9 @@ body {
   color: #d8d1f1;
 }
 .degrees {
-  font-size: 100px;
+  position: relative;
+  font-size: 60px;
+  top: -32px;
   color: #dfeaf0;
 }
 .stats {
@@ -29,6 +31,22 @@ body {
   color: #eeda91;
   text-transform: uppercase;
   text-align: center;
+}
+.celcius {
+  color: #d5cded;
+  font-size: 12px;
+}
+.separater {
+  padding: 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.fahrenheit {
+  color: #d5cded;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
 h1 {
   text-align: center;
