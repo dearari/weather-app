@@ -22,15 +22,20 @@
   </head>
   <body>
     <div class="container">
+      <div class="icon">
+        <img src="" id="icon" />
+      </div>
       <div class="current-temp">
-        <span class="livetemp" id="placeholder"></span
-        ><span class="degrees">°</span>
+        <span class="live-temp" id="live-temp"></span>
+        <div class="convert">
+          <span class="degree1">°</span>
+          <span class="celcius" id="celcius">c</span>
+          <span class="separater">/</span>
+          <span class="degree2">°</span>
+          <span class="fahrenheit" id="fahrenheit">f</span>
+        </div>
       </div>
       <div class="stats">
-        °<span class="celcius" id="celcius">c</span>
-        <span class="separater">|</span>
-        °<span class="fahrenheit" id="fahrenheit">f</span><br />
-        <span class="description" id="description"></span> |
         <span id="humidity"></span>% | <span id="wind"></span> km/h
       </div>
       <h1 id="city-name"></h1>
