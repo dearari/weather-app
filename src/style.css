@@ -5,7 +5,7 @@ body {
   margin: 20px auto;
   padding: 0px;
   max-width: 700px;
-  background-image: url("img/container.png");
+  background-image: url("../img/container.png");
   background-repeat: no-repeat;
 }
 .current-temp {
@@ -51,7 +51,7 @@ h2 {
   letter-spacing: 5px;
 }
 .wave-top {
-  background-image: url("img/wave-top.png");
+  background-image: url("../img/wave-top.png");
   background-repeat: no-repeat;
 }
 .upcoming-forecast {
@@ -124,7 +124,7 @@ h2 {
   letter-spacing: 2px;
 }
 .wave-bottom {
-  background-image: url("img/wave-bottom.png");
+  background-image: url("../img/wave-bottom.png");
   background-repeat: no-repeat;
   padding-bottom: 6px;
 }
