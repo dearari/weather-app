@@ -34,22 +34,6 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-function searchLocation(position) {
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-  let apiKey = "d8991684c37cf2c82b6oa05fb80b5a6t";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeather);
-}
-
-function getLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-
-let currentButton = document.querySelector("#current-location");
-currentButton.addEventListener("click", getLocation);
-
 let calendar = new Date();
 let days = [
   "Sunday",
