@@ -84,6 +84,8 @@ searchCity("Seoul");
 
 function convertFahrenheit(event) {
   event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let fahrenheit = (celsiusTemperature * 9) / 5 + 32;
   let temperature = document.querySelector("#live-temp");
   temperature.innerHTML = Math.round(fahrenheit);
@@ -96,6 +98,8 @@ fahrenheitLink.addEventListener("click", convertFahrenheit);
 
 function convertCelsius(event) {
   event.preventDefault();
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
   let temperature = document.querySelector("#live-temp");
   temperature.innerHTML = Math.round(celsiusTemperature);
 }
