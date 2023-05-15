@@ -94,16 +94,19 @@ h2 {
   background-repeat: no-repeat;
   padding-top: 6px;
 }
-.upcoming-forecast {
-  background-color: #e8e2fa;
-  padding-top: 30px;
+.forecast {
+  background: #e8e2fa;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
-.forecast {
+.row {
+  padding-left: 10px;
+}
+.forecast-bg {
   max-width: 100px;
   background: #fff;
   padding: 5px;
-  margin-left: 30px;
+  margin-left: 15px;
   border-radius: 4px;
 }
 .forecast-day {
