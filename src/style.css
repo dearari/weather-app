@@ -29,15 +29,20 @@ body {
   top: -25px;
   color: #d1e4ea;
 }
-.degree1 {
-  font-size: 22px;
+.convert .active {
+  color: #868686;
+  cursor: default;
+}
+.convert .active:hover {
+  text-decoration: none;
+  cursor: default;
 }
 .celsius a {
   font-size: 14px;
   position: relative;
   top: -5px;
   left: -4px;
-  color: #d5d5d5;
+  color: #eeda91;
   text-decoration: none;
 }
 .celsius a:hover {
@@ -47,17 +52,14 @@ body {
   font-size: 10x;
   position: relative;
   top: -4px;
-  right: 1px;
-}
-.degree2 {
-  font-size: 22px;
+  right: 4px;
 }
 .fahrenheit a {
   font-size: 14px;
   position: relative;
   top: -5px;
   left: -4px;
-  color: #d5d5d5;
+  color: #eeda91;
   text-decoration: none;
 }
 .fahrenheit a:hover {
@@ -71,7 +73,6 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -91,6 +92,84 @@ h2 {
   color: #fbd1e9;
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
+}
+.wave-top {
+  background-image: url("../img/wave-top.png");
+  background-repeat: no-repeat;
+}
+.upcoming-forecast {
+  background-color: #e8e2fa;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.day1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #868686;
+  text-align: left;
+  text-transform: uppercase;
+  background: #fff;
+  max-width: 150px;
+  margin-left: 35px;
+  padding: 5px 0px 5px 10px;
+}
+.day-end {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #fbd1e9;
+  text-transform: uppercase;
+  background: #fff;
+  padding: 5px 10px 5px 0px;
+}
+.day2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #868686;
+  text-align: left;
+  text-transform: uppercase;
+  background: #fff;
+  max-width: 150px;
+  margin-left: 35px;
+  padding: 5px 0px 5px 10px;
+}
+.deets1 {
+  background: #fff;
+  text-align: center;
+  max-width: 150px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+.deets2 {
+  background: #fff;
+  text-align: center;
+  max-width: 150px;
+  margin-right: 45px;
+  border-radius: 4px;
+}
+.temp-forecast {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #868686;
+}
+.temp-degree {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #c6c6c6;
+}
+.describe {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #eeda91;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.wave-bottom {
+  background-image: url("../img/wave-bottom.png");
+  background-repeat: no-repeat;
+  padding-bottom: 6px;
 }
 .search {
   background-color: #fff;
