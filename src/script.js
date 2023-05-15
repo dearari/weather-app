@@ -107,4 +107,30 @@ function convertCelsius(event) {
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertCelsius);
 
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col forecast-bg">
+          <div class="forecast-day">${day}</div>
+            <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+            class="icons"
+            id="icons"
+            width="75"
+            />
+          <div class="forecast-temp">
+            <span class="temp-max">32°</span>
+            <span class="temp-min">10°</span>
+          </div>
+      </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+
 searchCity("Seoul");
+displayForecast();
