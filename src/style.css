@@ -7,20 +7,19 @@ body {
   max-width: 700px;
   background-image: url("../img/container.png");
   background-repeat: no-repeat;
+  text-align: center;
 }
 .icon {
-  text-align: center;
   padding-top: 50px;
 }
 .current-temp {
   position: relative;
   top: -15px;
-  text-align: center;
 }
 .live-temp {
   font-family: "Roboto", sans-serif;
   font-size: 100px;
-  color: #d8d1f1;
+  color: #b3a9d7;
 }
 .convert {
   font-family: "Roboto", sans-serif;
@@ -42,7 +41,7 @@ body {
   position: relative;
   top: -5px;
   left: -4px;
-  color: #eeda91;
+  color: #cdba75;
   text-decoration: none;
 }
 .celsius a:hover {
@@ -59,7 +58,7 @@ body {
   position: relative;
   top: -5px;
   left: -4px;
-  color: #eeda91;
+  color: #cdba75;
   text-decoration: none;
 }
 .fahrenheit a:hover {
@@ -69,12 +68,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
-  color: #eeda91;
+  color: #cdba75;
   text-transform: uppercase;
-  text-align: center;
 }
 h1 {
-  text-align: center;
   text-transform: uppercase;
   color: #868686;
   padding-top: 0px;
@@ -85,86 +82,50 @@ h1 {
   letter-spacing: 10px;
 }
 h2 {
-  text-align: center;
   padding-bottom: 5px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #fbd1e9;
+  color: #e7b5d2;
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
 }
 .wave-top {
   background-image: url("../img/wave-top.png");
   background-repeat: no-repeat;
+  padding-top: 6px;
 }
 .upcoming-forecast {
   background-color: #e8e2fa;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.day1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #868686;
-  text-align: left;
-  text-transform: uppercase;
+.forecast {
+  max-width: 100px;
   background: #fff;
-  max-width: 150px;
-  margin-left: 35px;
-  padding: 5px 0px 5px 10px;
-}
-.day-end {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #fbd1e9;
-  text-transform: uppercase;
-  background: #fff;
-  padding: 5px 10px 5px 0px;
-}
-.day2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #868686;
-  text-align: left;
-  text-transform: uppercase;
-  background: #fff;
-  max-width: 150px;
-  margin-left: 35px;
-  padding: 5px 0px 5px 10px;
-}
-.deets1 {
-  background: #fff;
-  text-align: center;
-  max-width: 150px;
-  margin-right: 5px;
+  padding: 5px;
+  margin-left: 25px;
   border-radius: 4px;
 }
-.deets2 {
-  background: #fff;
-  text-align: center;
-  max-width: 150px;
-  margin-right: 45px;
-  border-radius: 4px;
-}
-.temp-forecast {
+.forecast-day {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: #868686;
-}
-.temp-degree {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: #c6c6c6;
-}
-.describe {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  color: #eeda91;
-  text-transform: uppercase;
+  font-size: 14px;
   letter-spacing: 2px;
+  color: #e7b5d2;
+  text-transform: uppercase;
+}
+.icons {
+  position: relative;
+  top: -10px;
+}
+.temp-max {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #a6a6a6;
+}
+.temp-min {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #adcce4;
 }
 .wave-bottom {
   background-image: url("../img/wave-bottom.png");
@@ -175,7 +136,6 @@ h2 {
   background-color: #fff;
   padding: 20px;
   max-width: 700px;
-  text-align: center;
 }
 .search-box {
   width: 474px;
@@ -183,10 +143,10 @@ h2 {
   margin-right: 5px;
   border: 1px solid #ededed;
   border-radius: 4px;
-  color: #d4cced;
+  color: #a6a6a6;
 }
 .search-button {
-  background: #fbd1e9;
+  background: #e7b5d2;
   padding: 5px 10px 5px 10px;
   border: 1px solid #fbd1e9;
   border-radius: 4px;
@@ -198,8 +158,8 @@ h2 {
 }
 .search-button:hover {
   background: #fff;
-  border: 1px solid #fbd1e9;
-  color: #fbd1e9;
+  border: 1px solid #e7b5d2;
+  color: #e7b5d2;
 }
 .bottom {
   background: #fff;
@@ -209,7 +169,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  color: #d4cced;
+  color: #b3a9d7;
   font-size: 12px;
   letter-spacing: 5px;
 }
