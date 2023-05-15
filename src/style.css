@@ -89,13 +89,8 @@ h2 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
 }
-.wave-top {
-  background-image: url("../img/wave-top.png");
-  background-repeat: no-repeat;
-  padding-top: 6px;
-}
 .forecast {
-  background: #e8e2fa;
+  background: #fff;
   padding-top: 50px;
   padding-bottom: 30px;
 }
@@ -104,17 +99,17 @@ h2 {
 }
 .forecast-bg {
   max-width: 100px;
-  background: #fff;
   padding: 5px;
   margin-left: 15px;
   border-radius: 4px;
+  border: 1px solid #f1f1f1;
 }
 .forecast-day {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 2px;
-  color: #e7b5d2;
   text-transform: uppercase;
+  color: #b3a9d7;
 }
 .icons {
   position: relative;
@@ -123,17 +118,12 @@ h2 {
 .temp-max {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #a6a6a6;
+  color: #e7b5d2;
 }
 .temp-min {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #adcce4;
-}
-.wave-bottom {
-  background-image: url("../img/wave-bottom.png");
-  background-repeat: no-repeat;
-  padding-bottom: 6px;
+  color: #a8c1d3;
 }
 .search {
   background-color: #fff;
@@ -149,9 +139,9 @@ h2 {
   color: #a6a6a6;
 }
 .search-button {
-  background: #e7b5d2;
+  background: #bdd1e0;
   padding: 5px 10px 5px 10px;
-  border: 1px solid #e7b5d2;
+  border: 1px solid #bdd1e0;
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -161,8 +151,8 @@ h2 {
 }
 .search-button:hover {
   background: #fff;
-  border: 1px solid #e7b5d2;
-  color: #e7b5d2;
+  border: 1px solid #bdd1e0;
+  color: #bdd1e0;
 }
 .bottom {
   background: #fff;
