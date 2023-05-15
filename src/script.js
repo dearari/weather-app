@@ -114,26 +114,39 @@ function convertCelsius(event) {
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertCelsius);
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
+
 function displayForecast(response) {
+  let forecastDays = response.data.daily;
   let forecast = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `<div class="col forecast-bg">
-          <div class="forecast-day">${day}</div>
+  forecastDays.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `<div class="col forecast-bg">
+          <div class="forecast-day">${formatDay(forecastDay.time)}</div>
             <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-            class="icons"
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
+              forecastDay.condition.icon
+            }.png"
             id="icons"
             width="75"
             />
-          <div class="forecast-temp">
-            <span class="temp-max">32°</span>
-            <span class="temp-min">10°</span>
-          </div>
+            <br />
+            <span class="temp-max">${Math.round(
+              forecastDay.temperature.maximum
+            )}°</span>
+            <span class="temp-min">${Math.round(
+              forecastDay.temperature.minimum
+            )}°</span>
       </div>`;
+    }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecast.innerHTML = forecastHTML;
