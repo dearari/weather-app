@@ -96,6 +96,7 @@ h2 {
 }
 .row {
   padding-left: 10px;
+  padding-right: 10px;
 }
 .forecast-bg {
   max-width: 100px;
