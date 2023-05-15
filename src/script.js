@@ -87,33 +87,6 @@ if (minute < 10) {
 let date = document.querySelector("#current-date");
 date.innerHTML = `${day} | ${month} ${date2} | ${hours12(hour)}:${minute}`;
 
-searchCity("Seoul");
-
-function convertFahrenheit(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheit = (celsiusTemperature * 9) / 5 + 32;
-  let temperature = document.querySelector("#live-temp");
-  temperature.innerHTML = Math.round(fahrenheit);
-}
-
-let celsiusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", convertFahrenheit);
-
-function convertCelsius(event) {
-  event.preventDefault();
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-  let temperature = document.querySelector("#live-temp");
-  temperature.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", convertCelsius);
-
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
