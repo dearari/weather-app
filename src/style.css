@@ -107,23 +107,19 @@ h2 {
 }
 .forecast-day {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #b3a9d7;
 }
-.icons {
-  position: relative;
-  top: -10px;
-}
 .temp-max {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #e7b5d2;
 }
 .temp-min {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #a8c1d3;
 }
 .search {
