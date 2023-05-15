@@ -17,6 +17,13 @@ function displayWeather(response) {
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.condition.description);
+  getForecast(response.data.coordinates);
+}
+
+function getForecast(coordinates) {
+  let apiKey = "d8991684c37cf2c82b6oa05fb80b5a6t";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function searchCity(city) {
@@ -107,7 +114,7 @@ function convertCelsius(event) {
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertCelsius);
 
-function displayForecast() {
+function displayForecast(response) {
   let forecast = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -133,4 +140,3 @@ function displayForecast() {
 }
 
 searchCity("Seoul");
-displayForecast();
